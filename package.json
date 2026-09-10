@@ -21,8 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "NODE_OPTIONS=--no-webstorage react-scripts start",
+    "build": "NODE_OPTIONS=--no-webstorage react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -43,5 +43,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.22",
+    "@types/node": "^22.20.2",
+    "@types/react": "18.3.31",
+    "@types/react-dom": "18.3.7",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^4.9.5"
   }
 }
